@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BlogOficial</title>
+        <%= stylesheet_link_tag 'poster', :media => 'all' %>
+    </head>
+    <body>
+        <div id="conteudo">
+            <div id="cabecalho">
+                <%= link_to "Home", {:controller => "poster", :action => "home"}, class: 'hm' %>
+                <%= link_to "Postagens", {:controller => "poster", :action => "post"}, class: 'ps' %>
+                <%= link_to "Sobre Nós", {:controller => "poster", :action => "sobrenos"}, class: 'sn' %>
+            </div>
+            <div id="corpo">
+            </div>
+            <div id="rodape">
+                © 2022 BlogOficial - Todos os direitos reservados
+            </div>
+        </div>
+    </body>
+</html>
